@@ -1,6 +1,6 @@
 This assignment involved creating an extension of Ice Cream App that we previously created using the new concepts taught in the classroom including: Room, RecyclerView, ListAdapter, Navigation, Fragments, Menu, Fragment Arguments, Binding etc.
 
-Given Constraints:
+Given Constraints:\
 •	Order data has to be stored in a database using Room.\
 •	Each order must have auto-generated id.\
 •	Ability to filter orders.\
