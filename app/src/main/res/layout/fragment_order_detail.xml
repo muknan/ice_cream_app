@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (C) 2021 The Android Open Source Project.
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~     http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OrderDetailFragment">
+
+    <Button
+        android:id="@+id/delete_btn"
+        style="?attr/materialButtonOutlinedStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="384dp"
+        android:text="@string/delete"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/order_quan_label"
+        android:layout_width="71dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="12dp"
+        android:gravity="center"
+        android:text="Quantity:"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/order_base_label"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/order_quan"
+        android:layout_width="53dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="244dp"
+        android:gravity="center"
+        android:text="4"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/order_base"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/order_base_label"
+        android:layout_width="46dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:text="Base:"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/order_total_label"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.986" />
+
+    <TextView
+        android:id="@+id/order_base"
+        android:layout_width="44dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="238dp"
+        android:layout_marginBottom="21dp"
+        android:gravity="center"
+        android:text="Cup"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/order_total"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.966" />
+
+    <TextView
+        android:id="@+id/order_total_label"
+        android:layout_width="45dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginBottom="112dp"
+        android:gravity="center"
+        android:text="Total:"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/delete_btn"
+        app:layout_constraintEnd_toStartOf="@+id/order_total"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/order_total"
+        android:layout_width="59dp"
+        android:layout_height="27dp"
+        android:layout_marginEnd="224dp"
+        android:layout_marginBottom="112dp"
+        android:gravity="center"
+        android:text="10"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/delete_btn"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/home_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:text="Home"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/delete_btn" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
